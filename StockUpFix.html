@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>StockUpFix</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image\x-icon" href="logos\favicon-32x32.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+            <div class="container">
+                <!-- Navbar Toggler for Mobile View -->
+                <h1 class="masthead-heading text-white mb-0 ">StockUpFix</h1>
+                <button class="navbar-toggler font-weight-bold text-white rounded" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarResponsive" 
+                        aria-controls="navbarResponsive" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Work">Our Work</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#About">About Us</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Tools">Tools</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <script>
+            // Variáveis para armazenar a posição do scroll
+            let lastScrollTop = 0;
+            const navbar = document.getElementById("mainNav");
+    
+            window.addEventListener("scroll", function() {
+                let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+                if (currentScroll > lastScrollTop) {
+                    // Rolando para baixo
+                    navbar.style.top = "-80px"; // Ajuste o valor conforme a altura da barra de navegação
+                } else {
+                    // Rolando para cima
+                    navbar.style.top = "0"; // Volta para a posição original
+                }
+                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para evitar números negativos
+            });
+        </script>
+    </body>
+    
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-white mb-0 ">StockUpFix</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0"></p>
+                <img src="logos\LogoPaPatualizado.png" alt="Gif" style="width:300px;height:300px;">
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section Our work" id="Work">
+            <div class="container">
+                <!-- Icon Divider-->
+                <h2 class="page-section-heading text-center mb-0 text-uppercase"  style="color: #2c3e50;">The idea</h2>
+
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <p class="text-uppercase mb-4 text-center">
+                    StockUpFix is a website designed to streamline inventory and service management, catering to the needs of small businesses. With an accessible interface, it enables efficient stock control, ensuring more organized operations and quick, informed decision-making.                </p>
+            </div>
+        </section>
+                
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="About">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About me</h2>
+
+                </div>
+                <!-- About Section Content-->
+                <div class="text-center">
+                    <img class="img-fluid rounded-circle" src="logos\AvatarSantos.png" alt="avatar santos" style="max-width: 180px;"></div> 
+                    <p> </p>
+                    <p class="lead mb-0 text-center">
+                        Rodrigo Santos 
+                    </p>
+                </div>
+                </section>
+                <section class="page-section Our work" id="Tools">
+                    <div class="container">
+
+                        <!-- Icon Divider-->
+                        <h2 class="page-section-heading text-center mb-0 text-uppercase" style="color: #2c3e50;">Tools</h2>
+                        <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                        <p class="text-uppercase mb-4 text-center">
+                            The tools we used include <strong>Visual Studio Code</strong> for editing the template, 
+                    <strong>Bootstrap Free Template</strong> to structure the website, 
+                    and <strong>Canva</strong> to design the logo.This are also some languages we used.
+                    </p>
+                    <p> </p>
+                    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                        <img class="img-fluid rounded-circle" src="logos\canva.png" alt="canva" style="max-width: 180px; margin: 10px;">
+                        <img src="logos\vb.png" alt="Visual studio code" style="max-width: 90px; margin: 10px;">
+                        <img src="logos\AndroidStudio.png" alt="Android Studio" style="max-width: 90px; margin: 10px;">
+                        <img src="logos\HTML.png" alt="HTML" style="max-width: 90px; margin: 10px;">
+                        <img src="logos\CSS.png" alt="CSS" style="max-width: 70px; margin: 10px;">
+                        <img src="logos\JavaScript.png" alt="JS" style="max-width: 80px; margin: 10px;">
+                    </div>
+                        </div>
+                </section>            
+            </div>
+        </div>
+    </div>
+</footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>2025 StockUpFix.Todos os direitos reservados.</small></div>
+        </div>
+    </body>
+</html>
